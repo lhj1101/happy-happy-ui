@@ -1,24 +1,38 @@
 # happy-ui
 
-## Project setup
+## 安装
 ```
-npm install
-```
-
-### Compiles and hot-reloads for development
-```
-npm run serve
+npm install happy-happy-ui
 ```
 
-### Compiles and minifies for production
+## 按钮
 ```
-npm run build
-```
-
-### Lints and fixes files
-```
-npm run lint
+<happy-button :text="'happyui测试按钮'"></happy-button>
 ```
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 列表
+```
+<happy-table :tableData="tableData"></happy-table>
+```
+
+## 台账
+```
+<happy-parameter
+  class="happyParameter"
+  ref="ceTablePaginations"
+  :queryList="queryList"
+  :tableData="tableData"
+  :tableLoading="tableLoading"
+  :tableTitle="tableTitle"
+  v-model:currentPage="pageContent.pageNumber"
+  v-model:page-size="pageContent.pageSize"
+  v-model:total="pageContent.totalRecord"
+  @size-change="handleSizeChange"
+  @current-change="handleCurrentChange"
+  @search="search"
+  @reload="reload"
+>
+</happy-parameter>
+```
+
+
