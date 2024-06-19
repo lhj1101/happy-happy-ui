@@ -1,0 +1,119 @@
+.wrap{
+    // height: calc(100vh - 80px);
+    height: 100%;
+    min-height: 600px;
+    background-color: #f7fafd;
+    padding: 0 20px;
+    .header{
+      height: 70px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .title{
+        font-size: 20px;
+        color: #000;
+        font-weight: bold;
+      }
+      .header-btns{
+        .el-button{
+          color: #fff;
+        }
+      }
+    }
+    .query-part{
+      background-color: #fff;
+      padding: 20px;
+      border-radius: 6px;
+      box-shadow: 0px 6px 4px #E2F2FC66;
+      .query-options{
+        overflow: hidden;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+        transition: height 0.2s ease 0s;
+        .option{
+          width: 33%;
+          display: flex;
+          margin-bottom: 10px;
+          padding-right: 20px;
+          height: 36px;
+          .name{
+            width: 100px;
+            line-height: 36px;
+          }
+          .value{
+            display: flex;
+            width: 100%;
+            align-items: center;
+          }
+          .el-input{
+            height: 36px;
+          }
+        }
+      }
+      .query-btn{
+        height: 36px;
+        padding-right: 30px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        .show-hidden-btn{
+          width: 85px;
+          color: #1E87F0;
+          cursor: pointer;
+        }
+        .search-btns{
+        }
+      }
+    }
+    .main{
+      background-color: #fff;
+      border-radius: 6px;
+      box-shadow: 0px 6px 4px #E2F2FC66;
+      margin-top: 20px;
+      .main-table-title{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 0 20px;
+        height: 60px;
+        border-bottom: 1px solid #eee;
+        .title{
+          font-size: 16px;
+          color: #000;
+          font-weight: bold;
+        }
+        .table-btns{}
+      }
+      
+    }
+  
+    .ce-table-pagination{
+      background-color: #fff;
+      .ce-table{
+        padding: 20px;
+        .el-table{
+          transition: height 0.2s ease 0s;
+        }
+        :deep(.column-text){
+          cursor: pointer;
+        }
+        :deep(.column-btns){
+          display: flex;
+          justify-content: space-evenly;
+          align-items: center;
+          .column-btn{
+            width: 20px;
+            height: 20px;
+            cursor: pointer;
+          }
+        }
+      }
+      .pagination{
+        padding: 12px;
+        .el-pagination{
+          justify-content: center;
+        }
+      }
+    }
+  }

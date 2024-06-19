@@ -1,0 +1,54 @@
+.query-part{
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 6px;
+  box-shadow: 0px 6px 4px #E2F2FC66;
+  .query-options{
+    overflow: hidden;
+    transition: height 0.2s ease 0s;
+    .option{
+      width: 33%;
+      margin-bottom: 10px;
+      padding-right: 20px;
+      height: 36px;
+      .name{
+        width: 88px;
+        display: inline-block;
+        line-height: 36px;
+        font-size: 14px;
+        font-family: 微软雅黑;
+        color: #666666;
+      }
+      .value{
+        display: inline-block;
+        width: calc(100% - 88px);
+      }
+      .el-input{
+        height: 36px;
+      }
+      .el-select{
+        width: 100%;
+      }
+      .el-date-editor{
+        width: 100%;
+        .el-input__wrapper{
+          width: 100%;
+        }
+      }
+    }
+  }
+  .query-btn{
+    height: 36px;
+    padding-right: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    .show-hidden-btn{
+      width: 85px;
+      color: #1E87F0;
+      cursor: pointer;
+    }
+    .search-btns{
+    }
+  }
+}
