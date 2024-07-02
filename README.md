@@ -5,6 +5,11 @@
 npm install happy-happy-ui
 ```
 
+## npm 地址
+```
+https://www.npmjs.com/package/happy-happy-ui
+```
+
 ## 按钮
 ```
 <happy-button :text="'happyui测试按钮'"></happy-button>
